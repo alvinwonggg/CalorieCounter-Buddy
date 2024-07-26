@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'arista-light';
+	src: url('/font/Arista-Pro-Light-trial.ttf');
+}
+  
+@font-face {
+font-family: 'arista-bold';
+src: url('/font/Arista-Pro-Bold-trial.ttf');
+}
+.whole-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-header-text {
+    margin-top: 150px;
+    font-size: 50px;
+    font-family: arista-light;
+}
+
+.profile-header-subtext {
+    font-size: 30px;
+}
+
+.profile-underline {
+    width: 100%; 
+    border: 0;
+    height: 2px;
+    background-color: black;
+    opacity: 0.3;
+    margin-top: 10px; 
+}  
+
+.account-information-header {
+    font-family: arista-light;
+    font-size: 40px;
+}
+
+.login-information {
+    font-family: arista-light;
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+.logout-btn button {
+    font-family: 'arista-light';
+    font-size: 20px;
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #80BDFF;
+    color: white;
+}
+
+.logout-btn button:hover {
+    box-shadow: 0 0 5px #80BDFF;
+}
+
+.profile-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+    margin-top: 20px; 
+}
+
+.options-header {
+    font-size: 35px;
+    font-family: 'arista-light', sans-serif;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px; 
+    transition: all 0.3s ease;
+}
+
+.options-header::after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px;
+    bottom: 0;
+    left: 50%; 
+    background-color: black;
+    transition: all 0.3s ease; 
+    transform: translateX(-50%); 
+}
+
+.options-header:hover::after {
+    width: 100%; 
+    left: 0; 
+    transform: translateX(0%); 
+}
+
+.profile-link {
+    font-family: arista-light;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    min-width: 300px; 
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-link:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+.calories-number {
+    font-size: 20px;
+    color: darkgreen;
+}
+
+.reset-button {
+    background-color: lightgreen;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+}
+  

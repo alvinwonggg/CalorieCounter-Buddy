@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'arista-light';
+	src: url('/font/Arista-Pro-Light-trial.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative; /* Establish a stacking context */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    /* margin-top: -850px; */
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/plant-upload.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+    z-index: -1; 
+}
+  
+.recipe-header {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: arista-light;
+}
+
+form {
+    font-size: 20px;
+    /* font-family: arista-light; */
+    width: 100%; 
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.name-of-recipe {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: arista-light;
+    font-size: 30px;   
+}
+
+.adding-buttons, .upload-submit-btn {
+    font-family: sans-serif; 
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    border: 2px solid #80BDFF; 
+    background-color: #f8f8f8; 
+    cursor: pointer; 
+    border-radius: 4px; 
+}
+
+.adding-buttons:hover, .upload-submit-btn:hover {
+    background-color: #e7e7e7; 
+}
+  
+.upload-submit-btn {
+    background-color: lightblue;
+}
+
+#text {
+    width: 100%; 
+    min-width: 400px;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px; 
+    border: 2px solid #80BDFF; 
+    border-radius: 5px; 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    font-family: "MrGeorge", sans-serif;
+}

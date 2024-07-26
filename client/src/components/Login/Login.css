@@ -1,0 +1,22 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-primary {
+    color: green;
+    text-decoration: none;
+}
+
+.link-primary {
+    font-weight: bold; /* This will make the text bold when hovered */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+.signup-text {
+    color: rgb(121, 34, 139);
+}
+
+
